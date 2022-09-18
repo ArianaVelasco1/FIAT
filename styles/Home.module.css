@@ -1,36 +1,60 @@
-.element.style{
-background-color: #4957d1;
-}
-.diagonal{
-  background-color: #4957d1;
-  align-items:flex-start ;
 
-}
-.container {
-  /* padding: 0 2rem; */
-  background-color:#4957d1;
-  
+.container{
+  width:100%;
+  height: 300%;
+  background: rgb(249,5,5);
+  background: linear-gradient(345deg, rgba(249,5,5,1) 50%, rgba(1,13,230,1) 30%);
 }
 
-
-.main {
-  height: 100%;
+.box {
+  height: 80%;
   width: 70%;
-  margin-top: 15%;
+  z-index: 1;
+  margin-top: -15%;
   margin-left: 15%;
   padding: 4rem 0;
   flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
   background-color: #fafafa;
-  z-index: 2;
+  
+
+}
+.cotizador{
+  padding: 10%;
+  font-family: 'Lato';
+  font-size: 100%;
+  color:#fafafa;
+  text-align: center;
+  letter-spacing: 0.50em;
+}
+.titulo2{
+  font-family: 'Playfair Display';
+  margin-top: -8%;
+  text-align: center;
+  color: black;
+  font-size: 200%;
+  text-decoration-line: overline;
+
+}
+.titulo{
+  text-align: center;
+  font-family:  'Playfair Display';
+  font-size: 180px;
+  font-style: italic;
+  color:#fafafa;
+  z-index: 3;
+  background-color: ;
+}rgba(1,13,230,1)
+
+.carro{
+margin-left:60%;
+z-index: 2;
 }
 
 
 .grid {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -38,10 +62,16 @@ background-color: #4957d1;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .carro{
+    margin-left: 50%;
+    z-index: 2;
+    width:500%;
+    height:250%;
   }
 }
 
